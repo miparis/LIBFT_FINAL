@@ -36,23 +36,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (0);
 }
-
-/*#include <string.h>
-#include <stdio.h>
-
-int	main(void)
-{
-	char	s1[30] = "Hello, world!";
-	char	s2[] = "Hell\0o";
-	char	*point;
-	char	str[30] = "Hello, world!";
-	char	to_find[] = "Hell\0o";
-	char	*point2;
-    size_t  size = 13;
-
-	point = strnstr(s1, s2, size);
-	point2 = ft_strnstr(str, to_find, size);
-	printf("%s\n", point);
-	printf("%s\n", point2);
-	return 0;
-}*/

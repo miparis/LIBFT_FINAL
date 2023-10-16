@@ -31,21 +31,3 @@ char	*ft_strdup(const char *s1)
 	newstr[i] = '\0';
 	return (newstr);
 }
-/*
-#include <stdio.h>
-#include <string.h>
-
-int main(void)
-{
-    const char *str = NULL;
-    //char *strduplicate = strdup(str);
-    char *ft_strduplicate = ft_strdup(str);
-
-    printf("Original: %s\n", str);
-   // printf("Original_uplicate: %s\n", strduplicate);
-    printf("ft_duplicate: %s\n", ft_strduplicate);
-
-    free(ft_strduplicate);
-	//free(strduplicate);
-    return(0);
-}*/

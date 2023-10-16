@@ -43,10 +43,3 @@ static int	ft_isspace(int c)
 		return (1);
 	return (0);
 }
-/*
-int main(int argc, char	*argv[])
-{
-	(void) argc;
-	printf("%i %i\n", ft_atoi(" \t\v\n\r\f123"), atoi(" \t\v\n\r\f123"));	
-	return(0);	
-}*/
