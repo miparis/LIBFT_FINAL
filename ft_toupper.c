@@ -17,12 +17,3 @@ int	ft_toupper(int c)
 	else
 		return (c);
 }
-
-/*#include <ctype.h>
-int main(void)
-{
-    char    input = 'PPPPPPA';
-    
-    printf("%c\n", toupper(input));
-    printf("%c\n", ft_toupper(input));
-}*/

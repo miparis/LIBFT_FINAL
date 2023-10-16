@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
 #include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
@@ -32,16 +31,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-/*
-#include <stdio.h>
-#include <string.h> 
-
-int main(void)
-{
-    int str1[] = {2, 4, 6, 5};
-    int str2 []= {2, 3, 7, 0};
-
-    printf("%i\n",  memcmp(str1, str2, 20));
-    printf("%i\n",  ft_memcmp(str1, str2, 20));
-    return (0);
-}*/

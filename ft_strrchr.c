@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
 #include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
@@ -34,15 +33,3 @@ char	*ft_strrchr(const char *s, int c)
 		return (last_match);
 	return (0);
 }
-/*
-#include <string.h>
-#include <stdio.h>
-int main()
-{
-    char    *s = {"holachehrgtjajjndtssss"};
-    //int c = '@';
-
-    printf("%d\n", strrchr(s, 't' + 256) == s);
-    printf("%d\n", ft_strrchr(s, 't' + 256) == s);
-    return (0);
-}*/

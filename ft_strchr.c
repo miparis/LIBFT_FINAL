@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
 #include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
@@ -30,15 +29,3 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return (0);
 }
-/*
-#include <string.h>
-#include <stdio.h>
-int main()
-{
-    char    *s = {"0x10be27a40"};
-    int c = '0';
-
-    printf("%d\n", strchr(s, 't' + 256) == s);
-    printf("%d\n", ft_strchr(s, 't' + 256) == s);
-    return (0);
-}*/

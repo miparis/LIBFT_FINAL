@@ -17,12 +17,3 @@ int	ft_tolower(int c)
 	else
 		return (c);
 }
-
-/*#include <ctype.h>
-int main(void)
-{
-    char    input = 'AAA';
-    
-    printf("%c\n", tolower(input));
-    printf("%c\n", ft_tolower(input));
-}*/

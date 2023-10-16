@@ -29,22 +29,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-/*
-#include <string.h>
-#include <stdio.h>
-
-int main()
-{
-	char *s = NULL;
-	char *s1 = NULL;
-   // const char ch = '\0';
-    char *ret;
-    char *ret2;
-    
-    //ret = memchr(s, '5' ,42);
-    ret2 = ft_memchr(s1, '5', 42); 
-    //printf("Result memchr: %s\n", ret);
-    printf("Result ft_memchr: %s\n", ret2);
-
-    return (0);
-}*/
