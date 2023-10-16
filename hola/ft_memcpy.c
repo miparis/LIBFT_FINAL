@@ -1,0 +1,47 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: miparis <miparis@student.42madrid.com>     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/09/22 15:17:46 by miparis           #+#    #+#             */
+/*   Updated: 2023/09/27 10:07:06 by miparis          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+#include <stddef.h>
+
+void	*ft_memcpy(void *dst, const void *src, size_t n)
+{
+	size_t			i;
+	unsigned char	*srccpy;
+	unsigned char	*destcpy;
+
+	i = 0;
+	srccpy = (unsigned char *)src;
+	destcpy = (unsigned char *)dst;
+	if ((!srccpy) && (!destcpy))
+		return (0);
+	while (n > i)
+	{
+		destcpy[i] = srccpy[i];
+		i++;
+	}
+	return (dst);
+}
+/*
+#include <string.h>
+#include <stdio.h>
+int main()
+{
+	char *str1 = NULL;
+	char *str2 =  NULL;
+	char *str3 = NULL;
+
+	printf("Before memcopy: %s\n", str1);
+	printf("After memcopy:%s\n", memcpy(str1, str2, 4));
+	printf("After ft_memcopy:%s\n",ft_memcpy(str1, str3, 4));
+	return (0);
+}*/
