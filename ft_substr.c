@@ -14,36 +14,25 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	unsigned int	strlen;
+	unsigned int	lenght;
 	size_t			len_substr;
 	char			*substr;
 
-	strlen = (size_t)ft_strlen(s) + 1;
-	if ((start >= strlen) || (len == 0))
+	if (!s)
+		return (NULL);
+	lenght = (size_t)ft_strlen(s) + 1;
+	if ((start >= lenght) || (len == 0))
 		len_substr = 1;
-	else if (len >= strlen - start)
-		len_substr = strlen - start;
+	else if (len >= lenght - start)
+		len_substr = lenght - start;
 	else
 		len_substr = len + 1;
 	substr = malloc(sizeof(char) * (len_substr));
 	if (substr == NULL)
 		return (NULL);
-	if (strlen > start)
+	if (lenght > start)
 		ft_strlcpy(substr, s + start, len_substr);
 	else
 		substr[0] = '\0';
 	return (substr);
 }
-/*
-#include <stdio.h>
-#include <string.h>
-int main(void)
-{
-	char s[] = "";
-	char *newstr;
-
-	newstr = ft_substr(s, 1, 1);
-	printf("Original string: %s\n", s);
-	printf("Return string: %s || Lenght: %zu\n", newstr, strlen(newstr));
-	return(0);
-}*/
