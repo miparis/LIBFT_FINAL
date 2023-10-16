@@ -47,15 +47,15 @@ MY_SOURCES = ft_isalpha.c \
 				ft_itoa.c \
 				ft_split.c
 
-MY_BONUS = ft_lstnew.c \
-			ft_lstadd_front.c \
-			ft_lstsize.c \
-			ft_lstlast.c \
-			ft_lstadd_back.c \
-			ft_lstdelone.c \
-			ft_lstclear.c \
-			ft_lstiter.c \
-			ft_lstmap.c
+MY_BONUS = ft_lstnew_bonus.c \
+			ft_lstadd_front_bonus.c \
+			ft_lstsize_bonus.c \
+			ft_lstlast_bonus.c \
+			ft_lstadd_back_bonus.c \
+			ft_lstdelone_bonus.c \
+			ft_lstclear_bonus.c \
+			ft_lstiter_bonus.c \
+			ft_lstmap_bonus.c
 
 MY_OBJECTS =  $(MY_SOURCES:.c=.o) 
 
@@ -70,7 +70,7 @@ CC		= gcc
 %.o:%.c
 		$(CC) $(CFLAGS) -c $< -o $@
 
-all:$(NAME) 
+all: $(NAME) 
 
 $(NAME): $(MY_OBJECTS) 
 		ar rcs $(NAME) $(MY_OBJECTS) 

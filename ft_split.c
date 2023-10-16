@@ -96,26 +96,3 @@ char	**ft_split(char const *s, char c)
 	array = ft_fill(s, c, array, substrings);
 	return (array);
 }
-/*
-#include <stdio.h>
-int main()
-{
-	int i = 0;
-	char *s= "Hola como estas?";
-	char **result;
-	char c = 'e';
-
-	result = ft_split(s, c);
-	if (result == NULL)
-	{
-		printf("Memory allocation failed.\n");
-		return 1;
-	}
-	while (result[i])
-	{
-		printf("%s\n", result[i]);
-		i++;
-	}
-	free (result);
-	return (0);
-}*/

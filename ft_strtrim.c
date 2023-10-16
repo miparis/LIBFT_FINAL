@@ -33,19 +33,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	str = ft_substr(s1, i, len);
 	return (str);
 }
-/*
-#include <stdio.h>
-#include <string.h>
-
-int main()
-{
-    char *s1 = "AAAAAAAAHAAAA";
-    char *set = "";
-	char *s2 = ft_strtrim(s1, set);
-	//char *s3 = NULL;
-    printf("S1 tring: %s\n", s1);
-    printf("To trim: %s\n", set);
-    printf("New string: %s\n", s2);
-	//printf("Compare: %d\n", strcmp(s2, s3));
-    return (0);
-}*/

@@ -14,13 +14,13 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	unsigned int	lenght;
-	size_t			len_substr;
-	char			*substr;
+	size_t	lenght;
+	size_t	len_substr;
+	char	*substr;
 
 	if (!s)
 		return (NULL);
-	lenght = (size_t)ft_strlen(s) + 1;
+	lenght = ft_strlen(s) + 1;
 	if ((start >= lenght) || (len == 0))
 		len_substr = 1;
 	else if (len >= lenght - start)

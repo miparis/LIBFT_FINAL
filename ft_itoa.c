@@ -77,16 +77,3 @@ char	*ft_itoa(int n)
 	str = ft_writedigit(str, n, i);
 	return (str);
 }
-/*
-#include <limits.h>
-#include <stdio.h>
-
-int main ()
-{
-    int number = 89;
-
-    //printf("Minimum value of int: %d\n", INT_MIN);
-    //printf("Maximum value of int: %d\n", INT_MAX);
-    printf("The integer as a string: %s\n", ft_itoa(number));
-    return (0);
-}*/

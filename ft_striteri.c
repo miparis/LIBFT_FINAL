@@ -17,6 +17,8 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 	unsigned int	i;
 
 	i = 0;
+	if (!s || !f)
+		return ;
 	if (s)
 	{
 		while (s[i] != '\0')
@@ -26,10 +28,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		}
 	}
 }
-
-/*int main(void)  
-{
-	char	*s = "12535488";
-    ft_striteri(s, ft(8, s));
-    return (0);
-}*/

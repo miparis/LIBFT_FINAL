@@ -14,18 +14,11 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
+	if (!s)
+		return ;
 	while (*s)
 	{
 		ft_putchar_fd(*s, fd);
 		s++;
 	}
 }
-/*
-int main()
-{
-    int fd = 1;
-    char *character = "Hola como estas?";
-    ft_putstr_fd(character, fd);
-
-    return 0;
-}*/

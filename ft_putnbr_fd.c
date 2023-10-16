@@ -34,12 +34,3 @@ void	ft_putnbr_fd(int n, int fd)
 	else
 		ft_putchar_fd(n + '0', fd);
 }
-/*
-int main()
-{
-    int fd = 1;
-    int nbr = 10000;
-    ft_putnbr_fd(nbr, fd);
-
-    return 0;
-}*/

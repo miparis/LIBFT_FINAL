@@ -16,12 +16,3 @@ void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }
-/*
-int main() 
-{
-    int fd = 1; // Using file descriptor 1 for standard output (stdout)
-    char character = '%'; // Character to be written
-    ft_putchar_fd(character, fd); // Call the function to write the character
-
-    return 0;
-}*/
